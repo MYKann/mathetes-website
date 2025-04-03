@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Mathetes Clothing</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mathetes Clothing</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Checkout</h2>
+
+        <div id="checkout-items"></div>
+        <p><strong>Total: $<span id="checkout-total">0.00</span></strong></p>
+
+        <form id="checkout-form">
+          <input type="text" id="name" placeholder="Full Name" required>
+          <input type="email" id="email" placeholder="Email Address" required>
+          <input type="text" id="address" placeholder="Shipping Address" required>
+          <input type="text" id="card-number" placeholder="Card Number" required>
+          <input type="text" id="expiry" placeholder="MM/YY" required>
+          <input type="text" id="cvv" placeholder="CVV" required>
+          <button id="paystack-btn">Pay Now</button>
+      </form>
+      <div id="loading-spinner" style="display: none;">Processing Order...</div>
+      
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mathetes Clothing</p>
+    </footer>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
